@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DataTable">
+   <children>
+      <TableView fx:id="userTable" layoutX="86.0" prefHeight="400.0" prefWidth="500.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="165.0" text="First Name">
+          </TableColumn>
+          <TableColumn fx:id="lastNameColumn" prefWidth="165.0" text="Last Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="170.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="20.0" layoutY="41.0" minWidth="50.0" mnemonicParsing="false" onAction="#addPressed" text="Add" />
+      <Button fx:id="deleteButton" layoutX="18.0" layoutY="78.0" mnemonicParsing="false" onAction="#deletePressed" text="Delete" />
+      <Button fx:id="editButton" layoutX="20.0" layoutY="113.0" mnemonicParsing="false" onAction="#editPressed" prefWidth="50.0" text="Edit" />
+      <Button fx:id="exitButton" layoutX="16.0" layoutY="329.0" mnemonicParsing="false" onAction="#exitPressed" prefWidth="50.0" text="Exit" />
+   </children>
+</AnchorPane>
